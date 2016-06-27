@@ -7,11 +7,8 @@
  */
 function filesArray($files)
 {
-    if (empty($files)) {
-        throw new Exception("Файлы не загружены");
-    }
 
-    $filesArray = [];
+    $filesArray = array();
     $countFiles = count($files['name']); //считаем кол-во файлов
     for ($i = 0; $i < $countFiles; $i++) {
         foreach ($files as $key => $value) {
